@@ -13,7 +13,7 @@ RUN apt-get update \
 USER airflow
 
 # Set JAVA_HOME (opsional, jika Spark/Hive memang butuh)
-ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
+# ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
 
 # Install airflow dan provider yang KOMPATIBEL dengan Airflow 2.10.5
 RUN pip install --no-cache-dir \
